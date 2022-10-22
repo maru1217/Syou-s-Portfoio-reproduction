@@ -1,0 +1,22 @@
+.c-frame--beside{
+    &::before{
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 12.5%;
+        height: 75%;
+        border-left: double 4px #888358;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 2px;
+        top: 12.5%;
+        height: 75%;
+        border-right: double 4px #888358;
+    }
+    
+}
+.c-frame--double{
+    border: double 4px #888358;
+}

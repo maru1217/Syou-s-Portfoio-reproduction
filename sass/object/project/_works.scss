@@ -1,0 +1,29 @@
+@use "../../foundation/common" as c;
+.p-works{
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        @include c.responsive(screen03){
+            flex-direction: row;
+        }
+    }
+    &__content{
+        width: 100%;
+        @include c.responsive(screen03){
+            width: 48%;
+        }
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+    &__img-container{
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    &__img{
+        max-width: 100%;
+    }
+
+}

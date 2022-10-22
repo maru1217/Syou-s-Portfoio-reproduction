@@ -1,0 +1,53 @@
+.c-pirts{
+    &::after{
+        content:"";
+        display: inline-block;
+        background-image: url(../image/pirts.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        position: absolute;
+        width: 65px;
+        height: 85px;
+        top: -45px;
+    }
+    
+}
+
+.c-pirts-and-star{
+    position: relative;   
+    display: inline-block;
+    &::before{
+        content: "";
+        display: inline-block;
+        background-image: url(../image/tit-pirts.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        position: absolute;
+        
+    }
+    &::after{
+        content: "";
+        display: inline-block;
+        background-image: url(../image/star.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+    }
+    
+}
+.c-pop--pulus{
+    &::after{
+        content: "＋";
+        width: 30px;
+        height: 30px;
+        background: #888358;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}

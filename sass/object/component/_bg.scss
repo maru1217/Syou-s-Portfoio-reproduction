@@ -1,0 +1,12 @@
+.c-bg{
+    &--circle{
+        background: #000;
+        border-radius: 50%;
+        width: 145px;
+        height: 145px;
+    }
+    &--purple-gradient{
+        background: linear-gradient(rgba(211, 209, 222, 0.75), rgba(251, 224, 234, 0.75));
+    }
+}
+

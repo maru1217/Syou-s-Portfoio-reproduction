@@ -1,0 +1,43 @@
+.c-text--inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before{
+        content: "";
+        border-top: 1px solid black;
+        margin-right: 1em;
+        width: 8em;
+    }
+    &::after{
+        content: "";
+        border-top: 1px solid black;
+        margin-left: 1em;
+        width: 8em;
+    }
+}
+
+
+
+.c-text--bg--green{
+    background: #888358;
+    color: #FFF;
+    text-align: center;
+}
+.c-text--bg--black{
+    background: #25263E;
+    color: #FFF;
+    border-radius: 3px;
+    text-align: center;
+}
+.c-subtext{
+    display: block;
+    font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.c-link-text{
+    font-size: 1.1rem;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+}

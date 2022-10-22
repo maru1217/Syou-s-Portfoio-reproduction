@@ -1,0 +1,37 @@
+/*****************************************************************************
+SET
+*****************************************************************************/
+
+$fontB:'Baskervville', serif;
+
+@mixin fontsize($size){
+  font-size: $size + px;
+  font-size: ($size / 10) * 1rem;
+  }  
+
+/* medhia */
+$breakpoints: (
+  'screen01': (min-width: 1200px),
+//ナビゲーション・フッター関係
+  'screen02': (min-width: 1078px),
+//通常コンテンツ幅以下 2カラムへ
+  'screen03': (min-width: 767px),
+//タブレット以下 1カラムへ
+  'screen04': (min-width: 500px)
+//スマホ
+) !default ;
+
+
+@mixin responsive($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  // マップ型で定義されていない値が呼び出された時はエラーを返す
+  @else {
+    @error "指定されたブレークポイントは定義されていません。" + "指定できるブレークポイントは次のとおりです。 -> #{map-keys($breakpoints)}";
+  }
+}
+
+

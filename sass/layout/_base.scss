@@ -1,0 +1,31 @@
+@use "../foundation/common" as c;
+
+
+html {
+    font-size: 62.5%;
+  }
+  body{
+    line-height:1.7;
+    //font-family:c.$fontG;
+    @include c.fontsize(16);
+    //color: c.$TextBlack;
+    -webkit-text-size-adjust: 100%;
+  }
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  li{
+    list-style: none;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+    // a:link    {color:c.$Blue; transition: 0.3s;}
+    // a:visited {color:c.$Blue;}
+    // a:hover   {color:c.$Blue; text-decoration: none;}
+    // a:focus   {color:c.$Blue; text-decoration: none;}
+    // a:active  {color:c.$Blue; text-decoration: none;}
+

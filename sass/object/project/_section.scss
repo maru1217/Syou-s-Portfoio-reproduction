@@ -1,0 +1,67 @@
+@use "../../foundation/common" as c;
+
+.p-section{
+    width: 90%;
+    padding: 47px 20px;
+    background-color: #FFF;
+    background-image: url(../image/wave-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-bottom: 220px;
+    &.--works{
+        margin-left: auto;
+    }
+    &__title{
+        font-size: 10.5rem;
+        font-family: "Baskervville", serif;
+        color: #856485;
+        line-height: 1;
+        margin-left: 0.3em;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        z-index: 1;
+        &::before{
+            width: 127px;
+            height: 124px;
+            z-index: -1;
+            left: -0.3em;
+            top: -20px;
+        }
+        &::after{
+            height: 100px;
+            transform: rotate(15deg);
+            position: absolute;
+            top: 0;
+            width: 50px;
+            right: -0.7em;
+        }
+    }
+    &__about-name{
+        font-size: 3rem;
+        font-weight: normal;
+        color: #78672E;
+        margin-bottom: 14px;
+    }
+    &__about-description{
+        display: flex;
+        margin-bottom: 100px;
+        flex-direction: column;
+        @include c.responsive(screen03){
+            flex-direction: row;
+        }
+        
+    }
+    &__about-image{
+        max-width: 100px;
+        margin: 0 auto;
+        padding: 40px 0;        
+        @include c.responsive(screen03){
+            max-width: 122px;
+            margin: 0 0 0 auto;
+            padding: 0;            
+        }
+    }
+
+
+}
